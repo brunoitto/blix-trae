@@ -170,11 +170,6 @@ const ParticleHero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
-              <a href="https://billing.stripe.com/p/login/test_4gw6pG6VX7yA8UwbII?prefilled_email=victormarinheiro%40me.com" target="_blank" rel="noopener noreferrer">
-                <Button size="lg" className="text-lg px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-2xl transition-all duration-300 hover:scale-105">
-                  Começar Agora
-                </Button>
-              </a>
               <Button 
                 variant="outline" 
                 size="lg" 
