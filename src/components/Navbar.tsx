@@ -85,9 +85,15 @@ const Navbar = () => {
               Login
             </Button>
           </Link>
-          <Button className="cta-button" onClick={() => setIsContactFormOpen(true)}>
-            -> Contratar a Blix4You
-          </Button>
+          <a 
+            href="https://buy.stripe.com/dR66r42WvatMe3e144"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="cta-button">
+              -> Contratar a Blix4You
+            </Button>
+          </a>
         </div>
       </div>
       
