@@ -32,6 +32,13 @@ const ContactFormDialog: React.FC<ContactFormDialogProps> = ({ open, onOpenChang
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  const handleWhatsAppChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = e.target;
+    // Remove todos os caracteres que não são números, parênteses, hífens ou espaços
+    const cleanedValue = value.replace(/[^0-9()\-\s]/g, '');
+    setFormData(prev => ({ ...prev, whatsapp: cleanedValue }));
+  };
+
   const handleSelectChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
@@ -92,7 +99,7 @@ const ContactFormDialog: React.FC<ContactFormDialogProps> = ({ open, onOpenChang
               id="whatsapp" 
               name="whatsapp" 
               value={formData.whatsapp} 
-              onChange={handleChange} 
+              onChange={handleWhatsAppChange} 
               placeholder="(00) 00000-0000" 
               required 
               className="bg-white text-black border-gray-300"
