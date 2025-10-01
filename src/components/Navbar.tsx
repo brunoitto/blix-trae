@@ -91,7 +91,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
           >
             <Button className="cta-button">
-              -> Contratar a Blix4You
+              → Contratar a Blix4You
             </Button>
           </a>
         </div>
@@ -135,7 +135,7 @@ const Navbar = () => {
                 </Button>
               </Link>
               <Button className="w-full cta-button" onClick={() => setIsContactFormOpen(true)}>
-                -> Contratar a Blix4You
+                → Contratar a Blix4You
               </Button>
             </div>
           </div>
